@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Giuseppe: Il Migliore in Tutto</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #fff9f9;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    header {
+      background: #ffa5b0;
+      color: white;
+      text-align: center;
+      padding: 3rem 1rem;
+    }
+    header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 0.5rem;
+    }
+    header p {
+      font-size: 1.2rem;
+    }
+    .section {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    .subheading {
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+      color: #d94a63;
+      border-bottom: 2px solid #ffa5b0;
+      padding-bottom: 0.5rem;
+    }
+    .review {
+      background: white;
+      border-left: 6px solid #ffa5b0;
+      margin-bottom: 1.5rem;
+      padding: 1.2rem 1rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    }
+    .review.negative {
+      border-left-color: #ccc;
+      background: #f9f9f9;
+    }
+    .review p {
+      margin: 0.5rem 0;
+    }
+    .author {
+      font-style: italic;
+      color: #777;
+    }
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1rem;
+    }
+    .feature {
+      background: white;
+      border: 2px dashed #ffa5b0;
+      border-radius: 10px;
+      padding: 1rem;
+      text-align: center;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    }
+    .feature span {
+      font-size: 2rem;
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+    form {
+      background: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    form input, form textarea, form button {
+      width: 100%;
+      margin-bottom: 1rem;
+      padding: 0.8rem;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    form button {
+      background-color: #ffa5b0;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    form button:hover {
+      background-color: #e08490;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Giuseppe: Il Migliore in Tutto</h1>
+    <p>Il ragazzo ideale. L’amico che tutti vorrebbero. Il mito, la leggenda.</p>
+  </header>
+
+  <div class="section">
+    <h2 class="subheading">Recensioni Sentimentali</h2>
+    <div class="review">
+      <p>"Sa essere presente, ti guarda come se fossi l’unica persona al mondo. Con lui ci si sente davvero amate."</p>
+      <p class="author">– Valentina</p>
+    </div>
+    <div class="review">
+      <p>"Romantico e attento ai dettagli. Una volta si è ricordato del mio cane… che non aveva mai visto."</p>
+      <p class="author">– Chiara</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2 class="subheading">Recensioni da Amico</h2>
+    <div class="review">
+      <p>"È il tipo che viene a prenderti anche alle 3 di notte solo perché hai dimenticato le chiavi. Un fratello."</p>
+      <p class="author">– Luca</p>
+    </div>
+    <div class="review">
+      <p>"Mai giudicante, sempre disponibile. Un amico che ti fa ridere anche nei momenti peggiori."</p>
+      <p class="author">– Marco</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2 class="subheading">Recensioni Negative (ma solo un po’)</h2>
+    <div class="review negative">
+      <p>"Una volta ha detto che preferisce l’ananas sulla pizza. Non so se posso fidarmi ancora."</p>
+      <p class="author">– Francesca (confusa)</p>
+    </div>
+    <div class="review negative">
+      <p>"Ha vinto a briscola e ha fatto il balletto della vittoria per 6 minuti. 2/5 solo perché mi ha fatto ridere."</p>
+      <p class="author">– Matteo</p>
+    </div>
+    <div class="review negative">
+      <p>"Ha mangiato l’ultima fetta di pizza. Non l’ho ancora superata."</p>
+      <p class="author">– Laura</p>
+    </div>
+  </div>
+
+  <div class="section features">
+    <div class="feature">
+      <span>❤️</span>
+      Romantico e premuroso
+    </div>
+    <div class="feature">
+      <span>‍♂️</span>
+      Amico leale e presente
+    </div>
+    <div class="feature">
+      <span>🎮</span>
+      Divertente (anche troppo)
+    </div>
+    <div class="feature">
+      <span>🍝</span>
+      Sa cucinare cose serie
+    </div>
+    <div class="feature">
+      <span>⏰</span>
+      Mai in ritardo (quasi mai)
+    </div>
+  </div>
+
+  <div class="section form-section">
+    <h2>Candidati per conoscere Giuseppe</h2>
+    <p>(Sì, è un sito serio. O forse no?)</p>
+    <form onsubmit="alert('La tua candidatura è stata ricevuta!'); return false;">
+      <input type="text" placeholder="Nome" required />
+      <input type="email" placeholder="Email" required />
+      <textarea placeholder="Perché Giuseppe dovrebbe conoscerti?" rows="4" required></textarea>
+      <button type="submit">Invia</button>
+    </form>
+  </div>
+
+</body>
+</html>
